@@ -1,5 +1,7 @@
 package com.terriblety.mod;
 
+import com.terriblety.mod.init.ModItems;
+
 import cpw.mods.fml.common.Mod;
 import cpw.mods.fml.common.Mod.EventHandler;
 import cpw.mods.fml.common.event.FMLInitializationEvent;
@@ -11,7 +13,7 @@ public class FirstMod {
 @EventHandler
 public void preInit(FMLPreInitializationEvent event)
 {
-	
+ModItems.init();	
 }
 @EventHandler
 public void init(FMLInitializationEvent event)
